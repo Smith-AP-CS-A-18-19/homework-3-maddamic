@@ -1,5 +1,5 @@
 /*
- * First and Last Names
+ * Michael Maddalon
  */
 
 public class Homework3 {
@@ -17,34 +17,44 @@ public class Homework3 {
 	 * class (e.g. Math.random())
 	 */
 	public void grade() {
-
+		Homework3.grade(this);
 	}
 
 	/* Calculate and return the sum of value1, value2, and value3
 	 */
 	public int sum() {
-
+		int valueSum = value1 + value2 + value3;
+		return valueSum;
 	}
 
 	/* Calculate and return the average of value1, value2, and value3
 	 * Hint: the average of numbers can be fractional
 	 */
 	public double average() {
-
+		int valueSum = value1 + value2 + value3;
+		double valueAverage = valueSum / 3;
+		return valueAverage;
 	}
 
 	/* Calculate and return the difference between the product and sum of
 	 * value 1, value2, and value3
 	 */
 	 public int productSumDifference() {
-
+		 int valueProduct = value1 * value2 * value3;
+		 int valueSum = value1 + value2 + value3;
+		 int valueDifference = valueProduct - valueSum;
+		 return valueDifference;
 	 }
 
 	 /* Calculate and return the sum of the squares of value1, value2, and
 	  * value3
 	  */
 	  public int sumSquares() {
-
+			int value1Square = value1 * value1;
+			int value2Square = value2 * value2;
+			int value3Square = value3 * value3;
+			int sumValueSquare = value1Square + value2Square + value3Square;
+			return sumValueSquare;
 	  }
 
 	  /* Tests to verify that your solutions work
